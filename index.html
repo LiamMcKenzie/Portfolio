@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Dev Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Include Bootstrap CSS -->
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Game Dev Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <!-- Add more navigation links as needed -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="name">
+      <div class="container">
+        <h2>Your Name</h2>
+        <hr>
+      </div>
+    </section>
+
+    <section id="home">
+      <div class="container">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Here, I showcase my game development projects.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="game-item open-modal" data-toggle="modal" data-target="#gameModal1">
+              <img src="img/unnamed - Copy.png" alt="Game 1">
+              <div class="overlay">
+                <p>Fresh Catch</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="game-item open-modal" data-toggle="modal" data-target="#gameModal2">
+              <img src="img//image3.png" alt="Game 2">
+              <div class="overlay">
+                <p>Emberstorm: Chronicles of Reckoning</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="game-item open-modal" data-toggle="modal" data-target="#gameModal3">
+              <img src="img/meow.jpg" alt="Game 3">
+              <div class="overlay">
+                <p>mrow~</p>
+              </div>
+            </div>
+          </div>
+          <!-- Add more grid items as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Other sections (About, Contact) can be added similarly -->
+    
+  </main>
+
+  <div class="modal fade" id="gameModal1" tabindex="-1" role="dialog" aria-labelledby="gameModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Fresh Catch</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Description of Fresh Catch goes here.</p>
+          <!-- Your content for Game 1 goes here -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <div id="youtubeVideo1" class="embed-responsive-item"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="gameModal2" tabindex="-1" role="dialog" aria-labelledby="gameModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Emberstorm: Chronicles of Reckoning</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Description of Emberstorm: Chronicles of Reckoning goes here.</p>
+          <!-- Your content for Game 2 goes here -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <div id="youtubeVideo2" class="embed-responsive-item"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="gameModal3" tabindex="-1" role="dialog" aria-labelledby="gameModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">mrow~</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Description of mrow~ goes here.</p>
+          <!-- Your content for Game 3 goes here -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <div id="youtubeVideo3" class="embed-responsive-item"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+
+</div>
+
+
+
+
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Your other script tags -->

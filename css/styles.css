@@ -1,0 +1,195 @@
+/* Resetting default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 10px;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#name {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#name h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+hr {
+  width: 50%;
+  margin: auto;
+  border: 1px solid #ccc;
+}
+
+.overlay-fullscreen {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity and color as desired */
+  z-index: 9999;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  /* Add more styles for the content within the overlay */
+}
+
+.overlay-fullscreen.active {
+  display: block;
+}
+
+
+/* Portfolio grid styles */
+#projects h2 {
+  margin-bottom: 20px;
+}
+
+#projects .game-item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+#projects .game-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.2s ease-in-out;
+}
+
+#projects .game-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer; /* Change cursor to link on hover */
+}
+
+#projects .game-item:hover .overlay {
+  opacity: 1;
+}
+
+#projects .game-item .overlay p {
+  margin: 0;
+  font-size: 20px;
+}
+
+/*modal overlay*/
+/*====================================================*/
+.overlay-fullscreen {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 9999;
+}
+
+.overlay-fullscreen.active {
+  display: block;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Adjust width as needed */
+  max-width: 800px; /* Set maximum width */
+  padding: 20px;
+  background-color: #fff; /* Background color for the content */
+  color: #333;
+}
+
+.overlay-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.overlay-header h2 {
+  margin: 0;
+}
+
+.overlay-header button {
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.overlay-description {
+  padding: 20px 0;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio for the video */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
