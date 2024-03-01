@@ -137,6 +137,23 @@ section hr {
   font-size: 20px;
 }
 
+/*Education*/
+.cv-link {
+  display: inline-block;
+  
+  padding: 15px 30px;
+  background-color: transparent;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cv-link:hover {
+  background-color: #9580ff50;
+  color: #333;
+}
 /*modal overlay*/
 /*====================================================*/
 .overlay-fullscreen {
