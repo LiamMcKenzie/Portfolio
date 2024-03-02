@@ -31,7 +31,7 @@ $(document).ready(function() {
         $(targetModal).modal('show');
       });
 
-    $('#gameModal1').on('show.bs.modal', function (e) {
+    $('#freshcatch').on('show.bs.modal', function (e) {
         $('#youtubeVideo1').html('<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5rnauqfwQIQ?si=47KEm4R6qMVgh45M&rel=0" allowfullscreen></iframe>');
       });
     
