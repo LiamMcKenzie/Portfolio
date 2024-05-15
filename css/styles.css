@@ -241,6 +241,11 @@ section hr {
   height: 100%;
 }
 
+.carousel-image {
+  object-fit: cover;
+  width: 100%;
+  height: 56.25vw; /* 100% * 9 / 16 = 56.25% */
+}
 
 .contact-buttons a {
   display: inline-flex; /* Use flexbox for alignment */
