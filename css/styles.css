@@ -1,3 +1,52 @@
+@font-face {
+  font-family: 'Aleo';
+  src: url('../fonts/aleo.regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aleo';
+  src: url('../fonts/aleo.light.otf') format('opentype');
+  font-weight: 300; /*light weight*/
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/raleway.regular.ttf') format('truetype');
+  font-weight: normal; 
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/raleway.light.ttf') format('truetype');
+  font-weight: 300; 
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/raleway.medium.ttf') format('truetype');
+  font-weight: 500; 
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/raleway.semibold.ttf') format('truetype');
+  font-weight: 600; 
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/raleway.bold.ttf') format('truetype');
+  font-weight: 700; 
+  font-style: normal;
+}
+
 /* Resetting default styles */
 body, h1, h2, h3, p, ul, li {
   margin: 0;
@@ -41,6 +90,15 @@ header {
 header h1 {
   margin: 0;
   font-size: 28px;
+  font-weight: 300;
+  font-family: 'raleway', serif;
+}
+
+header p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'raleway', serif;
 }
 
 nav ul {
@@ -57,11 +115,47 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  font-weight: 400;
+  font-family: 'raleway', serif;
 }
 
 main{
   margin-top: 110px;
 }
+
+section { /*"offset" added to fix navbar*/
+  padding-top: 100px; /* Adjust this value to suit your needs */
+  margin-top: -100px; /* This should be the negative equivalent of the padding */
+}
+
+section div h1{
+  font-weight: 300;
+  font-family: 'raleway', serif;
+}
+
+section div h2{
+  font-weight: 400;
+  font-family: 'raleway', serif;
+}
+
+section div h3{
+  font-weight: 500;
+  font-family: 'raleway', serif;
+}
+
+section div p{
+  font-weight: 500;
+  font-family: 'raleway', serif;
+}
+
+.project-title{
+  font-weight: 300;
+  font-family: 'raleway', serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+  width: 90%;
+}
+
 
 #name {
   text-align: center;
@@ -81,6 +175,13 @@ hr {
 section hr {
   border: 1px solid #333; /* Set the desired thickness and color */
 }
+
+.main-degree h2 {
+  font-weight: 700;
+  font-family: 'raleway', serif;
+} 
+
+
 
 /* Override Bootstrap's default hr styling */
 .container hr {
@@ -168,6 +269,9 @@ section hr {
   border-radius: 5px;
   border: 2px solid #fff;
   transition: background-color 0.3s, color 0.3s;
+  font-size: x-large;
+  font-weight: 700;
+  font-family: 'raleway', serif;
 }
 
 .cv-link:hover {
