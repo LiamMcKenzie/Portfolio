@@ -128,25 +128,25 @@ section { /*"offset" added to fix navbar*/
   margin-top: -100px; /* This should be the negative equivalent of the padding */
 }
 
-section div h1{
+section div h1, .modal-content h2{
   font-weight: 300;
   font-family: 'raleway', serif;
 }
 
-section div h2{
+section div h2, .modal-content h4{
   font-weight: 400;
   font-family: 'raleway', serif;
 }
 
-section div h3{
+section div h3, section div p,  .modal-content p,  .modal-content li, td{
   font-weight: 500;
   font-family: 'raleway', serif;
 }
 
-section div p{
-  font-weight: 500;
+.main-degree h2 {
+  font-weight: 700;
   font-family: 'raleway', serif;
-}
+} 
 
 .project-title{
   font-weight: 300;
@@ -176,10 +176,7 @@ section hr {
   border: 1px solid #333; /* Set the desired thickness and color */
 }
 
-.main-degree h2 {
-  font-weight: 700;
-  font-family: 'raleway', serif;
-} 
+
 
 
 
@@ -280,6 +277,8 @@ section hr {
 }
 /*modal overlay*/
 /*====================================================*/
+
+
 .overlay-fullscreen {
   display: none;
   position: fixed;
