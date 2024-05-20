@@ -178,6 +178,21 @@ section hr {
 
 
 
+.itchio {
+  display: inline-block;
+  padding: 0 10px;
+  
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: small;
+  height: 35px;
+  font-family: 'raleway', serif;
+}
+
+
 
 
 /* Override Bootstrap's default hr styling */
